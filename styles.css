@@ -59,3 +59,17 @@ header {
 .button.artstation:hover {
     background-color: #0d8cc6;
 }
+.profile {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px; /* Tamaño ajustable */
+    height: 150px;
+    border-radius: 50%; /* Hace que sea redonda */
+    border: 5px solid #333; /* Borde opcional */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    object-fit: cover; /* Ajusta la imagen para que siempre quede bien */
+    margin-bottom: 15px;
+}

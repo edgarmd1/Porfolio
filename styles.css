@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.buttons {
+    margin: 50px 0;
+}
+
+.button {
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.linkedin {
+    background-color: #0077b5;
+    color: white;
+}
+
+.artstation {
+    background-color: #13aff0;
+    color: white;
+}
+
+.github {
+    background-color: #333;
+    color: white;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background-color: #555;
+}
+
+.button.github:hover {
+    background-color: #24292e;
+}
+
+.button.linkedin:hover {
+    background-color: #005582;
+}
+
+.button.artstation:hover {
+    background-color: #0d8cc6;
+}

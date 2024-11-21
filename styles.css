@@ -73,3 +73,91 @@ header {
     object-fit: cover; /* Ajusta la imagen para que siempre quede bien */
     margin-bottom: 15px;
 }
+.skills, .contact {
+    margin: 50px auto;
+    max-width: 600px;
+    text-align: left;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills h2, .contact h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.skills ul, .contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li, .contact li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.contact a {
+    color: #0077b5;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+.projects {
+    margin: 50px auto;
+    max-width: 800px;
+    text-align: left;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-item h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.project-item a {
+    text-decoration: none;
+    color: #0077b5;
+    transition: color 0.3s;
+}
+
+.project-item a:hover {
+    color: #005582;
+}
+
+.project-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}

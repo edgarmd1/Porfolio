@@ -1,33 +1,28 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edgar Mesa Domínguez</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
 <body>
     <header>
         <h1>Edgar Mesa Domínguez</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <section class="profile">
-    <img src="tu-foto.jpg" alt="Foto de perfil" class="profile-pic">
-        <p>Hello! I’m Edgar, and design and video game developer student at CITM-UPC university </p>
-</section>
-
-<section class="about">
-    <h2>About me</h2>
-    <p>
-        I am a person passionate about video games. I love programming, creating 3D modeling and working on video editing projects. 
-        I'm always looking to learn new things and push my limits in the world of development and creativity.
-    </p>
-</section>
-    <section class="buttons">
-        <a href="https://www.linkedin.com/in/edgar-mesa-dominguez-386243270/" target="_blank" class="button linkedin">LinkedIn</a>
-        <a href="https://www.artstation.com/edgar_m_d" target="_blank" class="button artstation">ArtStation</a>
-        <a href="https://github.com/edgarmd1" target="_blank" class="button github">GitHub</a>
+    <section id="profile" class="profile">
+        <img src="tu-foto.jpg" alt="Foto de perfil" class="profile-pic">
+        <p>Hello! I’m Edgar, and design and video game developer student at CITM-UPC university</p>
     </section>
-    <section class="videos">
+    <section id="about" class="about">
+        <h2>About me</h2>
+        <p>
+            I am a person passionate about video games. I love programming, creating 3D modeling and working on video editing projects. 
+            I'm always looking to learn new things and push my limits in the world of development and creativity.
+        </p>
+    </section>
+    <section id="projects" class="videos">
         <h2>Some of My Edited Videos</h2>
         <div class="video-container">
             <iframe 
@@ -49,5 +44,15 @@
             </iframe>
         </div>
     </section>
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <p>Programming: C, C++, C#, Python, Unity.</p>
+        <p>3D Modeling: Blender, Maya, Zbrush.</p>
+        <p>Video Editing: Premiere Pro, After Effects, Final Cut Pro X.</p>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: edgar.mesa.dominguez@gmail.com</p>
+        <p>Phone: +34 609 44 60 61</p>
+    </section>
 </body>
-</html>

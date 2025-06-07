@@ -151,7 +151,8 @@
                 <p>C++, SDL2, ImGui, OpenGL</p>
             </div>
             <div class="modal-links">
-                <a href="https://github.com/ClaseAltaGames/RockstallicaEngine" target="_blank" class="project-link">View Project</a>
+                <a href="https://github.com/GoForce-Games/Projecte-1?tab=readme-ov-file" target="_blank" class="project-link" onclick="event.stopPropagation()">View Project</a>
+                <a href="https://www.youtube.com/watch?v=Yhkm3mUeZbE" target="_blank" class="project-link" onclick="event.stopPropagation()">View Trailer</a>
             </div>
         </div>
     </div>
@@ -208,23 +209,38 @@
     </div>
 
     <script>
+        function toggleImageSize(img) {
+            if (img.classList.contains('expanded')) {
+                img.classList.remove('expanded');
+            } else {
+                img.classList.add('expanded');
+            }
+        }
+
         function openModal(modalId) {
             document.getElementById(modalId).style.display = 'block';
-            document.body.style.overflow = 'hidden'; // Previene el scroll del fondo
+            document.body.style.overflow = 'hidden';
         }
 
         function closeModal(modalId) {
             document.getElementById(modalId).style.display = 'none';
-            document.body.style.overflow = 'auto'; // Restaura el scroll
+            document.body.style.overflow = 'auto';
         }
 
         // Cerrar modal al hacer clic fuera de él
         window.onclick = function(event) {
+            // Si se hace clic en una imagen expandida, la contraemos
+            if (event.target.classList.contains('modal-image') && event.target.classList.contains('expanded')) {
+                event.target.classList.remove('expanded');
+                return;
+            }
+            
             const modals = document.getElementsByClassName('modal');
             for (let i = 0; i < modals.length; i++) {
                 if (event.target == modals[i]) {
                     modals[i].style.display = 'none';
                     document.body.style.overflow = 'auto';
+
                 }
             }
         }
@@ -232,6 +248,14 @@
         // Cerrar modal con la tecla Escape
         document.addEventListener('keydown', function(event) {
             if (event.key === 'Escape') {
+                // Primero cerrar imágenes expandidas
+                const expandedImages = document.querySelectorAll('.modal-image.expanded');
+                if (expandedImages.length > 0) {
+                    expandedImages.forEach(img => img.classList.remove('expanded'));
+                    return;
+                }
+                
+                // Luego cerrar modales
                 const modals = document.getElementsByClassName('modal');
                 for (let i = 0; i < modals.length; i++) {
                     if (modals[i].style.display === 'block') {

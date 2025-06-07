@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="game-style">
+    <body class="game-style">
     <header class="game-header">
         <h1>Edgar Mesa Domínguez</h1>
         <nav>
@@ -23,92 +23,218 @@
 
     <section class="profile">
         <img src="tu-foto.jpg" alt="Foto de perfil" class="profile-pic">
-        <p>Hello! I’m Edgar, a design and video game developer student at CITM-UPC University.</p>
-    </section>
-
-    <section class="space">
-        <p> </p>
-    </section>
-
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>I am passionate about video games. I love programming, creating 3D models, and working on video editing projects.</p>
-    </section>
-
-    <section class="buttons">
-        <a href="https://www.linkedin.com/in/edgar-mesa-dominguez-386243270/" target="_blank" class="button linkedin">LinkedIn</a>
-        <a href="https://github.com/edgarmd1" target="_blank" class="button github">GitHub</a>
-    </section>
-
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming: C, C++, C#, Python, Unity</li>
-            <h1></h1>
-            <li>3D Modeling: Blender, Maya, Zbrush</li>
-            <h1></h1>
-            <li>Video Editing: Premiere Pro, After Effects</li>
-            <h1></h1>
-            <li>XR: OpenXR, Unity, Godot</li>
-            <h1></h1>
-            <li>Web Development: HTML, CSS, JavaScript</li>
-        </ul>
+        <p>Hello! I'm Edgar, a design and video game developer student at CITM-UPC University.</p>
     </section>
 
     <section id="projects" class="projects">
-        <h2>My GitHub Projects</h2>
+        <h2>My Projects</h2>
         <div class="project-grid">
-            <div class="project-card">
-                <h3>Escape Room VR - Los rituales de Bill "El tuerto" </h3>
+            <div class="project-card" onclick="openModal('modal1')">
+                <img src="images/VR-ElTuerto/Logo.png" alt="Escape Room VR" class="project-image">
+                <h3>Escape Room VR - Los rituales de Bill "El tuerto"</h3>
                 <p>A VR escape room made with Unity and OpenXR.</p>
-                <a href="https://github.com/GoForce-Games/EscapeRoomVR" target="_blank" class="project-link">View Project</a>
+                <div class="project-links">
+                    <a href="https://github.com/GoForce-Games/EscapeRoomVR" target="_blank" class="project-link" onclick="event.stopPropagation()">View Project</a>
+                    <a href="https://youtu.be/3NLcU8DKELo" target="_blank" class="project-link" onclick="event.stopPropagation()">View Trailer</a>
+                </div>
             </div>
-            <div class="project-card">
-                <h3>Rockstallica Engine</h3>
-                <p>A Game engine similar to Unity made with C++, SDL and ImGui. This engine is under development.</p>
-                <a href="https://github.com/ClaseAltaGames/RockstallicaEngine" target="_blank" class="project-link">View Project</a>
+
+            <div class="project-card" onclick="openModal('modal2')">
+                <img src="images/CF/1.MainMenu&Settings.gif" alt="Warhammer" class="project-image">
+                <h3>Warhammer 40,000: The Last Marine</h3>
+                <p>UI Programmer with Lua and C++. I also was in charge of UI Module in his first version</p>
+                <div class="project-links">
+                    <a href="https://github.com/Burned-Games/W40K-TLM" target="_blank" class="project-link" onclick="event.stopPropagation()">View Game</a>
+                    <a href="https://github.com/Burned-Games/Coffee-Engine/tree/Alpha1" target="_blank" class="project-link" onclick="event.stopPropagation()">View UI Module</a>
+                </div>
             </div>
-            <div class="project-card">
-                <h3>3D Visualizer</h3>
-                <p>A C++ application to load and render 3D models using SDL2 and OpenGL.</p>
-                <a href="https://github.com/ClaseAltaGames/MotorVideojuegos" target="_blank" class="project-link">View Project</a>
+
+            <div class="project-card" onclick="openModal('modal3')">
+                <img src="images/Bomberman/panic.jpeg" alt="Bomberman" class="project-image">
+                <h3>Panic Bomber</h3>
+                <p>An adaptation of the classic NeoGeo classic game maded in SDL.</p>
+                <div class="project-links">
+                    <a href="https://github.com/GoForce-Games/Projecte-1?tab=readme-ov-file" target="_blank" class="project-link" onclick="event.stopPropagation()">View Project</a>
+                    <a href="https://www.youtube.com/watch?v=Yhkm3mUeZbE" target="_blank" class="project-link" onclick="event.stopPropagation()">View Trailer</a>
+                </div>
             </div>
-            <div class="project-card">
+
+            <div class="project-card" onclick="openModal('modal4')">
                 <h3>Arkanoid made in Unity</h3>
                 <p>A classic Arkanoid game remake developed in Unity with modern features.</p>
-                <a href="https://github.com/CITM-MOBILE-DEVICES-TERRASSA/Arkanoid_EdgarMesaDominguez" target="_blank" class="project-link">View Project</a>
+                <div class="project-links">
+                    <a href="https://github.com/CITM-MOBILE-DEVICES-TERRASSA/Arkanoid_EdgarMesaDominguez" target="_blank" class="project-link" onclick="event.stopPropagation()">View Project</a>
+                </div>
             </div>
-            <div class="project-card">
+
+            <div class="project-card" onclick="openModal('modal5')">
                 <h3>Oh my Ghost</h3>
                 <p>A SDL C++ game with fun gameplay</p>
-                <a href="https://github.com/DumBell-Games/Oh-my-ghost" target="_blank" class="project-link">View Project</a>
+                <div class="project-links">
+                    <a href="https://github.com/DumBell-Games/Oh-my-ghost" target="_blank" class="project-link" onclick="event.stopPropagation()">View Project</a>
+                </div>
             </div>
-            <div class="project-card">
+
+            <div class="project-card" onclick="openModal('modal6')">
                 <h3>Furious Bald</h3>
                 <p>A C++ and SDL platformer game based on Super Mario.</p>
+                <div class="project-links">
+                    <a href="https://github.com/ClaseAltaGames/DDV_Platformer_SDL_Game" target="_blank" class="project-link" onclick="event.stopPropagation()">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modales -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h3>Escape Room VR - Los rituales de Bill "El tuerto"</h3>
+            <img src="images/VR-ElTuerto/Logo.png" alt="Escape Room VR" class="modal-image">
+            <div class="modal-description">
+                Bill “One-Eyed” was a serial killer who followed meticulous rituals when it came to ending his victims’ lives. For years, the police were on his trail, searching for clues to catch him, but whenever they seemed close to discovering one, the person involved would begin to lose their mind and eventually take their own life.
+
+                Will you be the one to solve the mystery?
+            </div>
+            <div class="modal-tech">
+                <h4>Technologies Used:</h4>
+                <p>Unity 3D, OpenXR, C#, VR SDK, 3D Modeling, Sound Design</p>
+            </div>
+            <div class="modal-links">
+                <a href="https://github.com/GoForce-Games/EscapeRoomVR" target="_blank" class="project-link">View Project</a>
+                <a href="https://youtu.be/3NLcU8DKELo" target="_blank" class="project-link">View Trailer</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h3>Warhammer 40,000: The Last Marine</h3>
+            <img src="images/CF/1.MainMenu&Settings.gif" alt="Warhammer" class="modal-image">
+            <div class="modal-description">
+                During development, I focused on implementing and polishing the UI screens. I created the main menu with animated elements, visual feedback on buttons, settings with audio and full screen options and logic to handle saved games, including continuing from the correct level when a save exists. I also developed the pause menu with access to controls and settings, ensuring values like audio and fullscreen persist across sessions. Additionally, I implemented a scrolling credits screen with speed control and redesigned the loading screen and lose screen. 
+
+                Beyond screen logic, I have been implementing the engine’s first UI module by adding essential features such as buttons, sliders, toggles, anchor points, sorting layers, and support for parent-child hierarchies. The UI system uses an independent transform structure that handles position, scaling, and alignment, and supports dynamic 2D texture rendering for clean integration of UI components.
+            </div>
+            <div class="modal-tech">
+                <h4>Technologies Used:</h4>
+                <p>C++, Lua, Custom Game Engine, UI Design, Menu Systems</p>
+            </div>
+            <div class="modal-links">
+                <a href="https://github.com/Burned-Games/W40K-TLM" target="_blank" class="project-link">View Game</a>
+                <a href="https://github.com/Burned-Games/Coffee-Engine/tree/Alpha1" target="_blank" class="project-link">View UI Module</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h3>Panic Bomber</h3>
+            <img src="images/Bomberman/panic.jpeg" alt="Bomberman" class="project-image">
+            <div class="modal-description">
+                Panic Bomber is a puzzle game derived from the Bomberman series. In this game, groups of 3 Bomberman blocks will fall from the top of the screen, and your job is to make them disappear by forming horizontal, vertical and diagonal lines with at least 3 blocks of the same color. The goal is to create chains of explosions that eliminate several blocks at once and earn more points. The key to victory lies in learning how to trigger chain reactions by eliminating blocks. In this way, the bar of the giant bomb will fill up faster. This bomb is so powerful that when one falls, it eliminates a lot of blocks in one go. This game supports single-player and two-player modes. Panic Bomber, originally released for PC Engine arcades, has been released for various consoles and platforms over the years, and is known for its fast-paced and addictive gameplay.
+            </div>
+            <div class="modal-tech">
+                <h4>Technologies Used:</h4>
+                <p>C++, SDL2, ImGui, OpenGL</p>
+            </div>
+            <div class="modal-links">
+                <a href="https://github.com/ClaseAltaGames/RockstallicaEngine" target="_blank" class="project-link">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h3>Arkanoid made in Unity</h3>
+            <div class="modal-description">
+                A modern remake of the classic Arkanoid game with enhanced graphics, power-ups, and smooth gameplay mechanics. Features multiple levels, particle effects, and responsive controls optimized for mobile devices.
+            </div>
+            <div class="modal-tech">
+                <h4>Technologies Used:</h4>
+                <p>Unity 3D, C#, Mobile Development, Physics2D, Particle Systems</p>
+            </div>
+            <div class="modal-links">
+                <a href="https://github.com/CITM-MOBILE-DEVICES-TERRASSA/Arkanoid_EdgarMesaDominguez" target="_blank" class="project-link">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h3>Oh my Ghost</h3>
+            <div class="modal-description">
+                Oh my Ghost! is an action RPG video game that utilizes body possession to gain abilities and engage in turn-based battles. Created during the Project II course by Dumbell Games, a group of video game and art students at CITM, the game presents a narrative that critiques the functioning of modern society through a fictional society of animals governed by superheroes. This contrast between a cartoonish, fun, and seemingly innocent aesthetic, and the presence of adult themes and sharp, crude humor offers a unique and provocative experience.
+            </div>
+            <div class="modal-tech">
+                <h4>Technologies Used:</h4>
+                <p>C++, SDL2, Game Physics, Sprite Animation, Audio Systems</p>
+            </div>
+            <div class="modal-links">
+                <a href="https://github.com/DumBell-Games/Oh-my-ghost" target="_blank" class="project-link">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <h3>Furious Bald</h3>
+            <div class="modal-description">
+                A platformer game inspired by Super Mario Bros, built entirely in C++ and SDL. Features classic platforming mechanics, collision detection, level progression, and retro-style graphics with modern polish.
+            </div>
+            <div class="modal-tech">
+                <h4>Technologies Used:</h4>
+                <p>C++, SDL2, Tile-based Graphics, Collision Systems, Level Design</p>
+            </div>
+            <div class="modal-links">
                 <a href="https://github.com/ClaseAltaGames/DDV_Platformer_SDL_Game" target="_blank" class="project-link">View Project</a>
             </div>
-            <div class="project-card">
-                <h3>Flappy Bird in Unity</h3>
-                <p>A recreation of Flappy Bird made in Unity.</p>
-                <a href="https://github.com/CITM-MOBILE-DEVICES-TERRASSA/Flappy-Bird-Pau-Mena-y-Edgar-Mesa" target="_blank" class="project-link">View Project</a>
-             </div>
-            <div class="project-card">
-                <h3>Bomberman Panic Bomber</h3>
-                <p>A recreation of Bomberman Panic Bomber made in SDL2 and C++.</p>
-                <a href="https://github.com/GoForce-Games/Projecte-1" target="_blank" class="project-link">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Race Physics</h3>
-                <p>A car race to test physics with OpenGL and SDL in C++.</p>
-                <a href="https://github.com/GoForce-Games/RacePhysics" target="_blank" class="project-link">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Pinball</h3>
-                <p>Pinball made in SDL2</p>
-                <a href="https://github.com/GoForce-Games/Fisica---Pinball" target="_blank" class="project-link">View Project</a>
-            </div>
-    </section>
+        </div>
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Previene el scroll del fondo
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restaura el scroll
+        }
+
+        // Cerrar modal al hacer clic fuera de él
+        window.onclick = function(event) {
+            const modals = document.getElementsByClassName('modal');
+            for (let i = 0; i < modals.length; i++) {
+                if (event.target == modals[i]) {
+                    modals[i].style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            }
+        }
+
+        // Cerrar modal con la tecla Escape
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const modals = document.getElementsByClassName('modal');
+                for (let i = 0; i < modals.length; i++) {
+                    if (modals[i].style.display === 'block') {
+                        modals[i].style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                        break;
+                    }
+                }
+            }
+        });
+    </script>
+
+
 
     <section id="contact" class="contact">
         <h2>Contact Me</h2>

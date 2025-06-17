@@ -290,3 +290,51 @@ body {
                 padding: 20px;
             }
         }
+
+.profile {
+    margin: 20px auto;
+    max-width: 1000px; 
+    padding: 20px 40px; 
+}
+
+.profile p {
+    margin: 0 auto;
+    max-width: 800px; 
+    padding: 0 20px; 
+    line-height: 1.6; 
+}
+
+
+.about {
+    margin: 20px auto;
+    max-width: 1000px;
+    padding: 20px 40px;
+}
+
+.about p {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+
+@media screen and (max-width: 768px) {
+    .profile, .about {
+        padding: 15px 20px; 
+    }
+    
+    .profile p, .about p {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile, .about {
+        padding: 10px 15px; 
+    }
+    
+    .profile p, .about p {
+        padding: 0 5px;
+    }
+}

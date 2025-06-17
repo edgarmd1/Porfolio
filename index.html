@@ -13,8 +13,7 @@
         <nav>
             <ul class="nav-menu">
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">GitHub Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#videos">Videos</a></li>
             </ul>
@@ -70,6 +69,7 @@
             </div>
 
             <div class="project-card" onclick="openModal('modal4')">
+                <img src="images/AK/Arkanoid.jpg" alt="Bomberman" class="project-image">
                 <h3>Arkanoid made in Unity</h3>
                 <p>A classic Arkanoid game remake developed in Unity with modern features.</p>
                 <div class="project-links">
@@ -78,14 +78,17 @@
             </div>
 
             <div class="project-card" onclick="openModal('modal5')">
+                <img src="images/OMG/screenshot1.png" alt="Bomberman" class="project-image">
                 <h3>Oh my Ghost</h3>
                 <p>A SDL C++ game with fun gameplay</p>
                 <div class="project-links">
                     <a href="https://github.com/DumBell-Games/Oh-my-ghost" target="_blank" class="project-link" onclick="event.stopPropagation()">View Project</a>
+                    <a href="https://youtu.be/jkjdR7SrFMI" target="_blank" class="project-link" onclick="event.stopPropagation()">View Trailer</a>
                 </div>
             </div>
 
             <div class="project-card" onclick="openModal('modal6')">
+                <img src="images/FB/screenshot2.png" alt="Furious Bald" class="project-image">
                 <h3>Furious Bald</h3>
                 <p>A C++ and SDL platformer game based on Super Mario.</p>
                 <div class="project-links">
@@ -142,7 +145,7 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal3')">&times;</span>
             <h3>Panic Bomber</h3>
-            <img src="images/Bomberman/panic.jpeg" alt="Bomberman" class="project-image">
+            <img src="images/Bomberman/panic.jpeg" alt="Bomberman" class="modal-image">
             <div class="modal-description">
                 Panic Bomber is a puzzle game derived from the Bomberman series. In this game, groups of 3 Bomberman blocks will fall from the top of the screen, and your job is to make them disappear by forming horizontal, vertical and diagonal lines with at least 3 blocks of the same color. The goal is to create chains of explosions that eliminate several blocks at once and earn more points. The key to victory lies in learning how to trigger chain reactions by eliminating blocks. In this way, the bar of the giant bomb will fill up faster. This bomb is so powerful that when one falls, it eliminates a lot of blocks in one go. This game supports single-player and two-player modes. Panic Bomber, originally released for PC Engine arcades, has been released for various consoles and platforms over the years, and is known for its fast-paced and addictive gameplay.
             </div>
@@ -161,6 +164,7 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal4')">&times;</span>
             <h3>Arkanoid made in Unity</h3>
+            <img src="images/AK/Arkanoid.jpg" alt="Bomberman" class="modal-image">
             <div class="modal-description">
                 A modern remake of the classic Arkanoid game with enhanced graphics, power-ups, and smooth gameplay mechanics. Features multiple levels, particle effects, and responsive controls optimized for mobile devices.
             </div>
@@ -178,6 +182,7 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal5')">&times;</span>
             <h3>Oh my Ghost</h3>
+            <img src="images/OMG/screenshot3.png" alt="Bomberman" class="modal-image">
             <div class="modal-description">
                 Oh my Ghost! is an action RPG video game that utilizes body possession to gain abilities and engage in turn-based battles. Created during the Project II course by Dumbell Games, a group of video game and art students at CITM, the game presents a narrative that critiques the functioning of modern society through a fictional society of animals governed by superheroes. This contrast between a cartoonish, fun, and seemingly innocent aesthetic, and the presence of adult themes and sharp, crude humor offers a unique and provocative experience.
             </div>
@@ -187,6 +192,7 @@
             </div>
             <div class="modal-links">
                 <a href="https://github.com/DumBell-Games/Oh-my-ghost" target="_blank" class="project-link">View Project</a>
+                <a href="https://youtu.be/jkjdR7SrFMI" target="_blank" class="project-link" onclick="event.stopPropagation()">View Trailer</a>
             </div>
         </div>
     </div>
@@ -195,6 +201,7 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal6')">&times;</span>
             <h3>Furious Bald</h3>
+            <img src="images/FB/screenshot3.png" alt="Furious Bald" class="modal-image">
             <div class="modal-description">
                 A platformer game inspired by Super Mario Bros, built entirely in C++ and SDL. Features classic platforming mechanics, collision detection, level progression, and retro-style graphics with modern polish.
             </div>
@@ -285,5 +292,8 @@
         <iframe src="https://www.youtube.com/embed/rDl0zexHj9o" title="Video 2" allowfullscreen></iframe>
         <iframe src="https://www.youtube.com/embed/RoRv3CJG08E" title="Video 3" allowfullscreen></iframe>
     </section>
+
+    <footer class="game-footer">
+        <p>&copy; 2025 Edgar Mesa Domínguez. All rights reserved.</p>
 </body>
 </html>
